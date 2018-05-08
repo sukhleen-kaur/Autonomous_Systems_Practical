@@ -1,0 +1,33 @@
+#Add behaviors in the following layout, please place it in order of the alphabet (except for the tests)
+#[behavior name]
+##behavior description
+#postcondition = postcondition
+#exceptions = exception
+#description = "a description of the behavior"
+##added things to find out
+
+### EXAMPLE BEHAVIORS
+[alignmain]
+description = "search, approach, align with ball and goal, and kick"
+postcondition = False
+
+[aligngoal]
+description = "align with goal"
+postcondition = False
+
+[alignkick]
+description = "align with ball and kick"
+postcondition = False
+
+[approach]
+description = "approach ball"
+postcondition = False
+
+[approachkick]
+description = "approach ball and kick"
+postcondition = False
+
+[searchmain]
+description = "search for ball"
+postcondition = False
+

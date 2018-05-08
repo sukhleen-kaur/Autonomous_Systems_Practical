@@ -45,9 +45,6 @@ class Aligngoal_x(basebehavior.behaviorimplementation.BehaviorImplementation):
 	if self.__nao.has_fallen():
 		self.set_failed("I fell")
 
-	#if (rospy.Time.now().to_sec() - self.last_goal_recogtime) > 5 and self.__state == "FOUND_GOAL":
-		#self.__state = "LOOK"
-		#self.__head_movement = "LEFT"
 		
 	elif (rospy.Time.now().to_sec() - self.__start_time) > 1 and self.__state == "LOOK":
 		if self.__head_movement == "LEFT":
